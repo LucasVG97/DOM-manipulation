@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculator.css">
+  <title>calculadora</title>
+</head>
+
+<body>
+  <section class="container">
+    <h1>Calculator</h1>
+    <h2>Select Operation</h2>
+
+    <label for="+">Addition</label>
+    <input type="radio" name="operation" value="+">
+    <label for="-">Subtraction</label>
+    <input type="radio" name="operation" value="-">
+    <label for="*">Multiplication</label>
+    <input type="radio" name="operation" value="*">
+    <label for="/">Division</label>
+    <input type="radio" name="operation" value="/">
+    <br>
+    <h3>Type your number</h3>
+    <input type="number">
+    <br>
+    <button type="button" class="enter show">Enter</button>
+    <button type="button" class="equals">Equals</button>
+
+
+    <div id="total">
+      Total<span></span>
+      <button type="button" class="newOp">New operation</button>
+    </div>
+  </section>
+
+  <script src="calculator.js"></script>
+</body>
+
+</html>
