@@ -1,15 +1,15 @@
 let form = document.querySelector('form');
-
+let generateRandom = (max) => Math.floor(Math.random() * max)
 let createRandomArray = () => {
-  var lista = new Array(Math.floor(Math.random() * 10))
+  var lista = new Array(generateRandom(10))
   for (let i = 0; i < lista.length; i++) {
-    lista.fill(Math.floor(Math.random() * 1000), i, i + 1)
+    lista.fill(generateRandom(1000), i, i + 1)
   }
   return lista
 }
 
 let createPromises = async () => {
-  let interval = Math.floor(Math.random() * 10000)
+  let interval = generateRandom(10000)
   const success = await new Promise((resolve) => setTimeout(resolve, interval, createRandomArray()))
   const ulElement = document.querySelector('ul')
   const liElement = document.createElement('li')
